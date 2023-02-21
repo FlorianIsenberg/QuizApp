@@ -18,8 +18,47 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src=""></script>
   </head>
 
-  <body></body>
+  <body onload="init()">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">QuizApp</span>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="card quizCard">
+        <img
+          src="img/school-supplies-g8eb8d9fd1_640.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title" id="questionText">Frage</h5>
+          <div class="card mb-2">
+            <div class="card-body" id="answer_1">Anwort</div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-body" id="answer_2">Anwort</div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-body" id="answer_3">Anwort</div>
+          </div>
+          <div class="card mb-2">
+            <div class="card-body" id="answer_4">Anwort</div>
+          </div>
+
+          <div class="questionFooter">
+            <span>
+              <b> 1 </b>
+              von
+              <b id="allQuestions"> 5 </b>
+              Fragen
+            </span>
+            <button class="btn btn-dark">Nächste Frage</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
