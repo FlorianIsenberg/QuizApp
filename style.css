@@ -21,3 +21,24 @@ body {
 .quizCard {
   width: 30rem;
 }
+
+.quizAnswer :hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bg-success,
+.bg-danger {
+  color: white;
+}
+
+.progress {
+  background-color: blue !important;
+  color: white !important;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
